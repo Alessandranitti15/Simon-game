@@ -41,7 +41,7 @@ function checkAnswer(currentLevel) {
   } else {
     console.log("wrong");
 
-    playSound("sounds/wrong.mp3");
+    playSound("wrong.mp3");
 
 
     $("body").addClass("game-over");
@@ -77,7 +77,7 @@ function checkAnswer(currentLevel) {
 
   function playSound(name) {
 
-    var audio = new Audio("sounds/" + name + ".mp3");
+    var audio = new Audio(name + ".mp3");
     audio.play();
   }
 
